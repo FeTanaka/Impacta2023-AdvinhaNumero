@@ -2,4 +2,8 @@
     <string name="app_name">Impacta2023-AdvinhaNumero</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="mensagem_inicial">Sortiei um número entre 0 e 10! Tente advinhar qual é!</string>
+    <string name="ajuda">Número entre 0 e 10!</string>
+    <string name="chutar">Chute o número!</string>
 </resources>
