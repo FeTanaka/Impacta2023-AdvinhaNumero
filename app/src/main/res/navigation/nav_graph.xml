@@ -9,20 +9,42 @@
         android:id="@+id/inicialFragment"
         android:name="br.com.impacta.curso.impacta2023_advinhanumero.InicialFragment"
         android:label="fragment_inicial"
-        tools:layout="@layout/fragment_inicial" />
+        tools:layout="@layout/fragment_inicial" >
+        <action
+            android:id="@+id/action_inicialFragment_to_chuteMaiorFragment"
+            app:destination="@id/chuteMaiorFragment" />
+        <action
+            android:id="@+id/action_inicialFragment_to_parabensFragment"
+            app:destination="@id/parabensFragment" />
+        <action
+            android:id="@+id/action_inicialFragment_to_chuteMenorFragment"
+            app:destination="@id/chuteMenorFragment" />
+    </fragment>
     <fragment
         android:id="@+id/chuteMaiorFragment"
         android:name="br.com.impacta.curso.impacta2023_advinhanumero.ChuteMaiorFragment"
         android:label="fragment_chute_maior"
-        tools:layout="@layout/fragment_chute_maior" />
+        tools:layout="@layout/fragment_chute_maior" >
+        <action
+            android:id="@+id/action_chuteMaiorFragment_to_inicialFragment"
+            app:destination="@id/inicialFragment" />
+    </fragment>
     <fragment
         android:id="@+id/chuteMenorFragment"
         android:name="br.com.impacta.curso.impacta2023_advinhanumero.ChuteMenorFragment"
         android:label="fragment_chute_menor"
-        tools:layout="@layout/fragment_chute_menor" />
+        tools:layout="@layout/fragment_chute_menor" >
+        <action
+            android:id="@+id/action_chuteMenorFragment_to_inicialFragment"
+            app:destination="@id/inicialFragment" />
+    </fragment>
     <fragment
         android:id="@+id/parabensFragment"
         android:name="br.com.impacta.curso.impacta2023_advinhanumero.ParabensFragment"
         android:label="fragment_parabens"
-        tools:layout="@layout/fragment_parabens" />
+        tools:layout="@layout/fragment_parabens" >
+        <action
+            android:id="@+id/action_parabensFragment_to_inicialFragment"
+            app:destination="@id/inicialFragment" />
+    </fragment>
 </navigation>
