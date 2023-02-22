@@ -9,4 +9,6 @@
     <string name="chute_maior">Seu chute foi maior do que o número sorteado!</string>
     <string name="tente_novamente">Tente novamente</string>
     <string name="chute_menor">Seu chute foi menor do que o número sorteado!</string>
+    <string name="parabens">Parabéns!\nVocê acertou o número sorteado!</string>
+    <string name="jogue_novamente">Jogue novamente</string>
 </resources>
