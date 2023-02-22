@@ -10,4 +10,9 @@
         android:name="br.com.impacta.curso.impacta2023_advinhanumero.InicialFragment"
         android:label="fragment_inicial"
         tools:layout="@layout/fragment_inicial" />
+    <fragment
+        android:id="@+id/chuteMaiorFragment"
+        android:name="br.com.impacta.curso.impacta2023_advinhanumero.ChuteMaiorFragment"
+        android:label="fragment_chute_maior"
+        tools:layout="@layout/fragment_chute_maior" />
 </navigation>

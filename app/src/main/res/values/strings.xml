@@ -6,4 +6,6 @@
     <string name="mensagem_inicial">Sortiei um número entre 0 e 10! Tente advinhar qual é!</string>
     <string name="ajuda">Número entre 0 e 10!</string>
     <string name="chutar">Chute o número!</string>
+    <string name="chute_maior">Seu chute foi maior do que o número sorteado!</string>
+    <string name="tente_novamente">Tente novamente</string>
 </resources>
