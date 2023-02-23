@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import br.com.impacta.curso.impacta2023_advinhanumero.databinding.FragmentInicialBinding
 import kotlin.random.Random
 
@@ -15,6 +16,7 @@ class InicialFragment : Fragment() {
 
     private var _binding: FragmentInicialBinding? = null
     private val binding get() = _binding!!
+    private val args: InicialFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,6 +30,8 @@ class InicialFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        Log.d("IMPACTA", "numeroArgs: ${args.numeroSorteado}")
+
         val numeroSorteado = Random.nextInt(0, 10)
         Log.d("IMPACTA2", "numeroSorteado: $numeroSorteado")
 
@@ -36,9 +40,9 @@ class InicialFragment : Fragment() {
                 val inputUsuario = binding.editTextNumber.text.toString().toInt()
 
                 val acao = when {
-                    inputUsuario > numeroSorteado -> R.id.action_inicialFragment_to_chuteMaiorFragment
-                    inputUsuario < numeroSorteado -> R.id.action_inicialFragment_to_chuteMenorFragment
-                    else -> R.id.action_inicialFragment_to_parabensFragment
+                    inputUsuario > numeroSorteado -> InicialFragmentDirections.actionInicialFragmentToChuteMaiorFragment(numeroSorteado)
+                    inputUsuario < numeroSorteado -> InicialFragmentDirections.actionInicialFragmentToChuteMenorFragment(numeroSorteado)
+                    else -> InicialFragmentDirections.actionInicialFragmentToParabensFragment()
                 }
 
                 findNavController().navigate(acao)
