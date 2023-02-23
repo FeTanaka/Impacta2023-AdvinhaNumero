@@ -32,7 +32,11 @@ class InicialFragment : Fragment() {
 
         Log.d("IMPACTA", "numeroArgs: ${args.numeroSorteado}")
 
-        val numeroSorteado = Random.nextInt(0, 10)
+        val numeroSorteado = if (args.numeroSorteado != -1) {
+            args.numeroSorteado
+        } else {
+            Random.nextInt(0, 10)
+        }
         Log.d("IMPACTA2", "numeroSorteado: $numeroSorteado")
 
         binding.button.setOnClickListener {
