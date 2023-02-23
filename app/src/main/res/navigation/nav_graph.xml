@@ -19,6 +19,10 @@
         <action
             android:id="@+id/action_inicialFragment_to_chuteMenorFragment"
             app:destination="@id/chuteMenorFragment" />
+        <argument
+            android:name="numeroSorteado"
+            app:argType="integer"
+            android:defaultValue="-1" />
     </fragment>
     <fragment
         android:id="@+id/chuteMaiorFragment"
@@ -28,6 +32,9 @@
         <action
             android:id="@+id/action_chuteMaiorFragment_to_inicialFragment"
             app:destination="@id/inicialFragment" />
+        <argument
+            android:name="numeroSorteado"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/chuteMenorFragment"
@@ -37,6 +44,9 @@
         <action
             android:id="@+id/action_chuteMenorFragment_to_inicialFragment"
             app:destination="@id/inicialFragment" />
+        <argument
+            android:name="numeroSorteado"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/parabensFragment"
