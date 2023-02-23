@@ -25,6 +25,7 @@
         android:ems="10"
         android:hint="@string/ajuda"
         android:inputType="number"
+        android:maxLength="2"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"

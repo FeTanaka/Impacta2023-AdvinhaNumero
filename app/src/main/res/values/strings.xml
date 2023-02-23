@@ -11,4 +11,6 @@
     <string name="chute_menor">Seu chute foi menor do que o número sorteado!</string>
     <string name="parabens">Parabéns!\nVocê acertou o número sorteado!</string>
     <string name="jogue_novamente">Jogue novamente</string>
+
+    <string name="nao_digitou_numero">Por favor um número entre 0 e 10.</string>
 </resources>
