@@ -26,7 +26,7 @@ class ParabensFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.button4.setOnClickListener {
-            val acao = R.id.action_parabensFragment_to_inicialFragment
+            val acao = ParabensFragmentDirections.actionParabensFragmentToInicialFragment()
             findNavController().navigate(acao)
         }
     }
